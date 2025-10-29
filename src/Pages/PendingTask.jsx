@@ -9,7 +9,7 @@ export default function PendingTasks() {
   }, []);
 
   return (
-    <div className="container mx-auto py-5">
+    <div className="container mx-auto py-5 h-[70vh]">
       <h2 className="text-4xl font-bold mb-3">Pending Tasks</h2><hr />
       {tasks.length === 0 ? <p className="my-4 text-3xl">No pending tasks.</p> : (
         <ul className="my-5">

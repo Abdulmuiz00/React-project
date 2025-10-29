@@ -1,10 +1,11 @@
-import { BrowserRouter, Route, Routes, Router } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import AddTask from "./Pages/AddTask";
 import AllTasks from "./Pages/AllTasks";
 import CompletedTasks from "./Pages/CompletedTask";
 import PendingTasks from "./Pages/PendingTask";
 import Home from "./Pages/Home";
+import Footer from "./Component/Footer";
 function App() {
   return (
    <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/completed" element={<CompletedTasks />} />
         <Route path="/pending" element={<PendingTasks />} />
       </Routes>
+      <Footer />
    </BrowserRouter>
   );
 }

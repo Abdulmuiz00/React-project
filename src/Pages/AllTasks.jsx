@@ -25,7 +25,7 @@ export default function AllTasks() {
   };
 
   return (
-    <div className="container mx-auto py-5">
+    <div className="container mx-auto py-5 h-[70vh]">
       <h2 className="text-4xl font-bold mb-3">All Tasks</h2><hr />
       {tasks.length === 0 ? (
         <p className="py-4 text-3xl">No tasks found.</p>
