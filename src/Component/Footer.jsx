@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="bg-amber-900 text-white mt-0 h-auto border-t border-amber-800">
       <div className="container mx-auto px-8 py-8 flex flex-col gap-6">
-        {/* Top Section */}
+
         <div className="flex flex-col text-center">
           <h2 className="text-4xl font-bold mb-4">Stay Productive Every Day</h2>
           <p className="text-lg text-amber-100 max-w-2xl mx-auto mb-6">
@@ -17,7 +17,7 @@ function Footer() {
           </button>
         </div>
 
-        <div className="py-4 flex md:flex-row justify-between items-center gap-4 border-t border-amber-800">
+        <div className="py-4 flex md:flex-col lg:flex-row justify-between items-center gap-4 border-t border-amber-800">
           <h2 className="text-lg font-semibold">
             Task Manager App © {new Date().getFullYear()}
           </h2>

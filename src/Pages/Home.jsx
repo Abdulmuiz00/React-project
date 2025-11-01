@@ -8,38 +8,37 @@ import track from "../assets/track.jpg";
 function Home() {
   return (
     <div className="bg-gray-50 text-gray-800">
-      <section className="min-h-[90vh] flex md:flex-row justify-between items-center container mx-auto px-8 py-12">
-        <div className="flex flex-col gap-5">
-          <h1 className="text-5xl font-bold w-[60%] leading-tight">
-            Welcome to{" "}
-            <span className="text-amber-800">Task Manager App</span>
+      <section className="lg:min-h-[90vh] md:h-[70vh] flex md:flex-row justify-between items-center container mx-auto lg:px-8 md:px-8 px-5 py-12">
+        <div className="flex flex-col gap-5 md:w-[50%]">
+          <h1 className="text-5xl font-bold lg:w-[70%] leading-tight">
+            Welcome to <span className="text-amber-800">Task Manager App</span>
           </h1>
           <p className="text-lg text-gray-700 max-w-lg">
             Organize your life effortlessly. Add, track, and manage your daily
             tasks to stay focused and productive.
           </p>
           <button className="bg-amber-900 hover:bg-amber-700 text-white px-8 py-3 rounded-lg transition duration-200 shadow-md w-fit">
-            <Link to="/add">Add Your First Task</Link>
+            <Link to="/add">Add Task</Link>
           </button>
         </div>
 
-        <div>
+        <div className="lg:block md:block hidden">
           <img
             src={task}
-            className="w-[500px] rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300"
+            className="lg:w-[500px] lg:h-[300px] md-w-[50%] md:h-60 rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300"
             alt="Task management illustration"
           />
         </div>
       </section>
-
-      <section className="bg-white py-20 px-6">
+      <section className="bg-white lg:py-20 md-py-20 py-2 px-16">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-10 text-amber-900">
             Key Features
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
-            <div className="bg-gray-100 p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300">
+          <div className="flex gap-8 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-amber-800 scrollbar-track-gray-200">
+
+            <div className="bg-gray-100 md:flex-shrink-0 md:w-[300px] w-[381px] p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300">
               <img
                 src={addimg}
                 alt="Add Task"
@@ -54,7 +53,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="bg-gray-100 p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300">
+            <div className="bg-gray-100 md:flex-shrink-0 md:w-[300px] w-[381px] p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300">
               <img
                 src={manage}
                 alt="Manage Tasks"
@@ -68,7 +67,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="bg-gray-100 p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300">
+            <div className="bg-gray-100 md:flex-shrink-0 md:w-[300px] w-[381px] p-8 rounded-2xl shadow hover:shadow-lg transition-all duration-300">
               <img
                 src={track}
                 alt="Track Progress"
