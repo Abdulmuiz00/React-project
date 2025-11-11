@@ -18,11 +18,11 @@ function Footer() {
         </div>
 
         <div className="py-4 flex flex-col md:flex-col lg:flex-row justify-between items-center gap-4 border-t border-amber-800">
-          <h2 className="text-lg me-auto lg:my-auto md:my-auto font-semibold">
+          <h2 className="text-lg me-auto lg:my-auto md:mx-[16px] md:text-2xl font-semibold">
             Task Manager App © {new Date().getFullYear()}
           </h2>
 
-          <div className="flex flex-col lg:flex-row md:flex-row me-auto lg:my-auto md:my-auto gap-6 text-sm">
+          <div className="flex flex-col lg:flex-row md:flex-row me-auto lg:my-auto md:mx-auto gap-6 md:text-[16px] text-[15px]    ">
             <Link to="/" className="hover:text-amber-300 transition">
               Home
             </Link>
@@ -40,7 +40,7 @@ function Footer() {
             </Link>
           </div>
 
-          <p className="text-xs me-auto lg:my-auto md:my-auto text-amber-200">Built by Dev Abduluiz</p>
+          <p className="text-xs me-auto lg:my-auto md:mx-auto md:text-[15px] text-[15px] text-amber-200">Built by Dev Abduluiz</p>
         </div>
       </div>
     </footer>

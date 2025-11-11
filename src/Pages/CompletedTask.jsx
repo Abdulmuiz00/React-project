@@ -9,7 +9,7 @@ function CompletedTasks() {
   }, []);
 
   return (
-    <div className="min-h-[80vh] bg-gray-50 py-16 px-6">
+    <div className="min-h-[80vh] bg-gray-50 py-16 md:mt-10 mt-10 px-6">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-4xl font-bold text-center mb-6 text-amber-900">
           Completed Tasks

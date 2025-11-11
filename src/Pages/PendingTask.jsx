@@ -9,7 +9,7 @@ function PendingTasks() {
   }, []);
 
   return (
-    <div className="min-h-[80vh] bg-gray-50 py-16 px-6">
+    <div className="min-h-[80vh] bg-gray-50 py-16 md:mt-10 mt-10 px-6">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-4xl font-bold text-center mb-6 text-amber-900">
           ⏳ Pending Tasks
@@ -20,7 +20,7 @@ function PendingTasks() {
           at a time.
         </p>
 
-        <hr className="border-amber-900 mb-10 w-2/3 mx-auto" />
+        <hr className="border-amber-900 mb-10 w-3/3 mx-auto" />
 
         {tasks.length === 0 ? (
           <div className="text-center bg-white shadow-md rounded-2xl py-16 px-8">

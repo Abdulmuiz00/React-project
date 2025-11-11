@@ -24,12 +24,12 @@ function AllTasks() {
   };
 
   return (
-    <div className="bg-white min-h-[90vh] py-10">
+    <div className="bg-white min-h-[90vh] py-10 md:mt-20 mt-13">
       <div className="container mx-auto px-4 sm:px-8 relative">
         <h2 className="text-4xl font-bold mb-6 text-center text-amber-900 relative">
           <File
             size={40}
-            className="absolute left-[42%] transform -translate-x-1/2 text-amber-900"
+            className="absolute lg:left-[42%] left-[25%] md:left-[36%]  transform -translate-x-1/2 text-amber-900"
           />
           All Tasks
         </h2>
